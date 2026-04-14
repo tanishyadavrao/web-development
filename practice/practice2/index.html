@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        body{
+            background-image: url(bubble-background-8jg9pyys83y30a3o.jpg);
+            position: relative;
+            z-index: -1;
+
+        }
+        .container{
+            background-color: rgba(255, 255, 255, 0.387);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle{
+            /* border: 10px solid rgb(6, 220, 227); */
+            height: 350px;
+            width: 350px;
+            border-radius: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #86cbcbaa;
+            outline: 2px solid rgba(200, 189, 189, 0.687);
+            outline-offset: -15px;
+            filter: blur(10%);
+            animation: bounce 2s linear;
+            
+        }
+        .transform{
+            transition: all 2s;
+
+        }
+        .inputcont{
+            display: flex;
+            flex-direction: column;
+            padding-top: 30px;
+        }
+        .heading{
+            font-size: 30px;
+            color: rgb(28, 6, 227);
+            
+        }
+        
+        .content{
+            animation: showtext 2s linear;
+        }
+        .input{
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid white; 
+            margin-top: 10px;
+            outline: none;
+            transition: 0.5s;
+            
+        }
+        .input::placeholder{
+            color: white;
+            font-size: 15px;
+        }
+        .input:focus{
+            color:rgb(28, 6, 227) ;
+            outline: none;
+        }
+        .fgtpswrd{
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .lginbtn{
+            display: block;
+            margin-left: 60px;
+            margin-top: 20px;
+            height: 25px;
+            width: 70px;
+            background-color:rgba(28, 6, 227, 0.195);
+            border-radius: 10px;
+            color:rgb(28, 6, 227) ;
+            border: none;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        @keyframes showtext{
+            from{
+                opacity: 0;
+                scale: 0;
+            }
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+        }
+        @keyframes bounce{
+            0%{ transform: translateY(-100%) scaleY(0.8);}
+            25%{ transform: translateY(0) scaleY(1.08);}
+            50%{ transform: translateY(-50%) scaleY(0.96);}
+            75%{ transform: translateY(0) scaleY(1.02);}
+            100%{ transform: translateY(0) scaleY(1);}
+            
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle transform">
+            <div class="content">
+                <div class="heading">Welcome Back</div>
+                <div class="inputcont">
+                    <input type="email" placeholder="Email" class="input">
+                    <input type="password" placeholder="Password" class="input">
+                    <p class="fgtpswrd">Forgot password</p>
+
+                </div>
+                <button class="lginbtn">Log In</button>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

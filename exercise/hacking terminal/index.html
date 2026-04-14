@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hacking terminal</title>
+    <style>
+      body {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content1">
+        <span class="text1"></span>
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+      </div>
+      <div class="content2">
+        <span class="text2"></span>
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+      </div>
+      <div class="content3">
+        <span class="text3"></span>
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+      </div>
+      <div class="content4">
+        <span class="text4"></span>
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+      </div>
+      <div class="content5">
+        <span class="text5"></span>
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+      </div>
+    </div>
+
+    <script>
+      function getRandomTime() {
+        return Math.ceil(Math.random() * 7) * 1000;
+      }
+      
+
+      function showDot(className) {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            document.querySelector(className).innerHTML = ".";
+            resolve();
+          }, 1000);
+        });
+    }
+
+      async function text1(text) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.querySelector(".text1").innerHTML = "initializing hacking";
+
+            resolve();
+          }, getRandomTime());
+        });
+      }
+      async function text2(text) {
+        await showDot(".dot1");
+        await showDot(".dot2");
+        await showDot(".dot3");
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.querySelector(".text2").innerHTML = "reading your files";
+            resolve();
+          }, getRandomTime());
+        });
+      }
+      async function text3(text) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.querySelector(".text3").innerHTML =
+              "password files detected";
+            resolve();
+          }, getRandomTime());
+        });
+      }
+      async function text4(text) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.querySelector(".text4").innerHTML =
+              "sending all personel files and passwords to server";
+            resolve();
+          }, getRandomTime());
+        });
+      }
+      async function text5(text) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            document.querySelector(".text5").innerHTML = "cleaning up";
+            resolve();
+          }, getRandomTime());
+        });
+      }
+      text1()
+        .then(() => text2())
+        .then(() => text3())
+        .then(() => text4())
+        .then(() => text5())
+        .then(() => {
+          console.log("you are hacked");
+        });
+    </script>
+  </body>
+</html>

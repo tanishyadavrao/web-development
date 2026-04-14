@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ultra edit</title>
+    <style>
+      .nav {
+        border: 2px solid palevioletred;
+        background-color: palevioletred;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      .nav ul {
+        display: flex;
+        justify-content: flex-end;
+        
+      }
+      ul li {
+        list-style-type: none;
+        padding: 15px;
+        cursor: pointer;
+      }
+      ul li:hover {
+        color: aqua;
+      }
+      header div img{
+        width:94px;
+        height: 43px;
+        align-items: center;
+      }
+      header{
+        display: flex;
+      }
+
+      .box1 {
+        border: 2px solid black;
+        width: 214px;
+        height: 524px;
+        background-color: #ddaa12;
+        padding: 12px;
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+      .box2 {
+        border: 2px solid black;
+        width: 214px;
+        height: 524px;
+        background-color: #12ccdd;
+        padding: 12px;
+        margin-top: 15px;
+        margin-left: 25px;
+        margin-right: 15px;
+      }
+      .container {
+        display: flex;
+        border: solid greenyellow;
+        margin-top: 5px;
+        background-color: greenyellow;
+      }
+      .floating {
+        border: 3px solid yellow;
+        height: 34px;
+        width: 34px;
+        border-radius: 20px;
+        background-color: yellow;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+      }
+      .name {
+        border: 4px solid red;
+        border-radius: 14px;
+        height: 64px;
+        margin-left: 12px;
+        margin-top: 12px;
+        margin-right: 12px;
+        text-align: center;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="right">
+        <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Site-Logo.png">
+      </div>
+      <ul>
+        <li>products</li>
+        <li>pricing</li>
+        <li>resources</li>
+        <li>about us</li>
+      </ul>
+    </header>
+    <nav class="container">
+      <nav class="box box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        laudantium eos magnam ipsa, debitis nam quibusdam reprehenderit.
+        Eligendi magni animi earum aliquid consectetur rerum cupiditate quod
+        quae placeat laborum. Placeat repellendus iure, atque sequi perspiciatis
+        et accusamus ex.
+      </nav>
+      <nav class="box box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        laudantium eos magnam ipsa, debitis nam quibusdam reprehenderit.
+        Eligendi magni animi earum aliquid consectetur rerum cupiditate quod
+        quae placeat laborum. Placeat repellendus iure, atque sequi perspiciatis
+        et accusamus ex.
+      </nav>
+    </nav>
+    <nav class="floating"></nav>
+    <nav class="name">hello I am Tanish Yadav</nav>
+  </body>
+</html>

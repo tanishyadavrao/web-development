@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="6" width="36" height="36" rx="10"
+        stroke="rgb(179, 179, 179)" stroke-width="3"
+        stroke-dasharray="6 6" fill="none"/>
+  <circle cx="36" cy="36" r="10"
+          stroke="rgb(179, 179, 179)" stroke-width="3"
+          fill="none"/>
+  <line x1="43" y1="43" x2="52" y2="52"
+        stroke="rgb(179, 179, 179)" stroke-width="3"
+        stroke-linecap="round"/>
+</svg>

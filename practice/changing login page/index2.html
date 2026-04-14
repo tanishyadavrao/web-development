@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      body {
+        background-color: aqua;
+      }
+      .box {
+        height: 350px;
+        width: 50vw;
+        margin: auto;
+        margin-top: 100px;
+        
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+      }
+      .inputs {
+        display: flex;
+        flex-direction: column;
+      }
+      .input {
+        width: 180px;
+        margin-top: 10px;
+        margin-left: 50px;
+        height: 30px;
+        border: 1px solid white;
+        background-color: #e1e1e1;
+        border-radius: 10px;
+        padding-left: 10px;
+      }
+      .content1 {
+        grid-column: 2;
+        margin-top: 20px;
+        
+        position: relative;
+        justify-content: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      .content2 {
+        background-color: rgb(32, 138, 199);
+        /* margin-right: 0px; */
+        grid-column: 1;
+      }
+      .text {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .buttons {
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+        margin-top: 10px;
+      }
+      .button1{
+        margin-left: 120px;
+        margin-top: 10px;
+        background-color: rgb(32, 138, 199);
+      }
+      .button{
+        
+        background-color: #e1e1e1;
+        height:30px;
+        width:30px;
+        position:relative;
+        align-content: center;
+        justify-content: center;
+        border-radius: 7px;
+        padding-left: 5px;
+        
+      }
+      .googlebtn{
+        font-weight: 900;
+        font-size: 20px;
+      }
+      .linkedinbtn{
+        font-weight: 900;
+        font-size: 20px;
+
+      }
+      .button1{
+        height:30px;
+        width:100px;
+        border-radius: 10px;
+        border:1px solid white
+
+      }
+      .button:hover{
+        cursor: pointer;
+        background-color: lightblue;
+        scale: 1.04;
+      }
+      .content2{
+        border-radius: 20px 90px 90px 20px;
+        padding-left:20px ;
+        
+      }
+      .text1{
+        margin-top: 80px;
+        font-weight: 600;
+        margin-left: 25px;
+        font-size: 30px;
+      }
+      .text2{
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 10px;
+      }
+      .cont2txt{
+        
+        color: white;
+      }
+      .signupbtn{
+        border:1px solid white;
+        color: white;
+        border-radius: 5px;
+        width: 80px;
+        height:25px;
+        text-decoration: none;
+        display: block;
+        padding-left: 10px;
+        margin-left: 80px;
+        margin-top: 20px;
+        padding-top: 5px;
+        
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        
+        <div class="content2">
+          <div class="text1 cont2txt">Welcome back!</div>
+          <div class="text2 cont2txt">
+            Enter your personal details to use all of site features
+          </div>
+          <a href="index.html" class="signupbtn">Sign In</a>
+        </div>
+        <div class="content1">
+          <h2>Sign In</h2>
+          <div class="inputs">
+            <input type="text" class="name input" placeholder="Name" />
+            <input type="email" class="email input" placeholder="enter Email" />
+            <input type="password" class="password input" placeholder="enter password" />
+          </div>
+          <div class="text">or sign in using</div>
+          <div class="buttons">
+            <div class="googlebtn button">G</div>
+            <div class="linkedinbtn button">In</div>
+            <div class="button">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="black"
+                  d="M16.365 1.43c0 1.14-.462 2.204-1.206 3.014-.768.84-2.028 1.5-3.186 1.41-.144-1.098.384-2.238 1.14-3.066.768-.864 2.088-1.47 3.252-1.358zM20.45 17.71c-.522 1.176-.768 1.704-1.44 2.748-.936 1.458-2.256 3.276-3.888 3.288-1.452.012-1.824-.948-3.792-.936-1.968.012-2.376.948-3.828.936-1.632-.012-2.88-1.656-3.816-3.114-2.616-4.044-2.892-8.79-1.272-11.256 1.152-1.764 2.976-2.796 4.68-2.796 1.74 0 2.832.96 4.272.96 1.392 0 2.244-.96 4.26-.96 1.524 0 3.132.828 4.284 2.256-3.768 2.064-3.156 7.416.54 8.874z"
+                />
+              </svg>
+            </div>
+          </div>
+          <button class="button1">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

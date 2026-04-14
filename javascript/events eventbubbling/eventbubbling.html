@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event bubbling</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="minibox">
+                hey this a small box
+            </div> 
+        </div>
+    </div>
+    <script>
+        document.querySelector(".minibox").addEventListener("click",(e)=>{
+            e.stopPropagation()
+            alert("you clicked on minibox");
+        })
+        document.querySelector(".box").addEventListener("click",(e)=>{
+            alert("you clicked on box");
+        })
+        document.querySelector(".container").addEventListener("click",(e)=>{
+            alert("you clicked on container");
+        })
+    </script>
+</body>
+</html>

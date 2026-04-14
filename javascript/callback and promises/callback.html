@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call back</title>
+</head>
+<body>
+    hello
+    <script>
+        function sum(a,b){
+            console.log(a+b);
+        }
+        function calculator(a,b,sumcallback){
+            sumcallback(a,b);
+        }
+        calculator(1,4,sum);
+
+        function getdata(dataId,GetNextData){
+            setTimeout(()=>{
+                console.log("data",dataId);
+                if(GetNextData){
+                    GetNextData();    
+
+                }
+                
+            },2000)
+
+        }
+        getdata(4,()=>{
+            getdata(5,()=>{
+                getdata(6);
+            });
+        })
+    </script>
+    
+</body>
+</html>

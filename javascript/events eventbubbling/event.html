@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Hello I am Tanish Yadav
+        </div>
+        <button id="btn">click on this button</button>
+        <button id="btn2">click to change mode</button>
+    </div>
+    <script>
+        let button=document.getElementById("btn");
+        button.addEventListener("click", ()=>{
+            document.querySelector(".box").innerHTML="hello, you clicked on this button";
+            alert("you have clicked on this button");
+        })
+        button.addEventListener("dblclick", ()=>{
+            document.querySelector(".box").innerHTML="Now, you double clicked on this button";
+            alert("you have double clicked on this button");
+        })
+        button.addEventListener("contextmenu", ()=>{
+            document.querySelector(".box").innerHTML="you are trying to right click on this button";
+            // alert("you have double clicked on this button");
+        })
+        let modebtn=document.querySelector("#btn2")
+        let currmode="light";
+        modebtn.addEventListener("click",()=>{
+            // console.log("mode")
+            if(currmode=="light"){
+                currmode="dark";
+                document.querySelector("body").style.backgroundColor="black";
+                document.querySelector(".box").style.color="white";
+            }
+            else{
+                currmode="light";
+                document.querySelector("body").style.backgroundColor="white";
+                document.querySelector(".box").style.color="black";
+
+            }
+            console.log(currmode);
+
+        })
+        
+
+    </script>
+    
+</body>
+</html>

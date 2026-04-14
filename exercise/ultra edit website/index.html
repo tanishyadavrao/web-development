@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+      nav{
+        display: flex;
+        justify-content: space-around;
+        background-color: burlywood;
+
+        
+        
+      }
+      ul li:hover{
+        color: aqua;
+        cursor: pointer;
+      }
+      nav div ul{
+        list-style-type: none;
+        display: flex;
+        gap:8px;
+
+      }
+      .logo img{
+        width: 100px;
+      }
+      .heading{
+        text-align: center;
+        margin-top: 60px;
+        font-size: 1.5em;
+      }
+      .subheading{
+        text-align: center;
+
+      }
+      .buttons {
+        text-align: center;
+        margin-top: 20px;
+        
+      }
+      .buttons button{
+        background-color: rgb(125, 230, 228);
+        color: white;
+        border-radius: 5px;
+        height: 30px;
+
+      }
+      .boxes{
+        border: 2px solid beige;
+        height:120px;
+        width:202px;
+        margin-top: 32px;
+        margin-left: 52px;
+        background-color: rgb(217, 198, 198);
+        border-radius: 7px;
+      }
+      .download_buttons button{
+        height:32px;
+        font-size: 0.7em;
+        margin-top: 40px;
+        border-radius: 4px;
+      }
+      .grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr; */
+      }
+      .d32_bit{
+        background-color: aqua;
+      }
+      .d64_bit{
+        background-color: greenyellow;
+      }
+      .box_names{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 1.5em;
+      }
+      .box3{
+        grid-row: 1/2;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+        src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Site-Logo.png""
+        alt="">
+      </div>
+      <div>
+        <ul>
+          <li>products</li>
+          <li>pricing</li>
+          <li>recources</li>
+          <li>about us</li>
+        </ul>
+      </div>
+    </nav>
+    <main class="content">
+      <div class="heading">
+        download <b>ultraedit</b> for windows
+      </div>
+      <div class="subheading">
+        download and try ultraedit before you but it
+      </div>
+      <div class="buttons">
+      <button class="mac_button">
+        download mac or linux version
+
+      </button>
+      </div>
+
+    </main>
+    <main class="grid">
+      <div class="box1 boxes">
+        <div class="box_names">english</div>
+        <div class="download_buttons">
+          <button class="d32_bit"> download 32-bit</button>
+          <button class="d64_bit"> download 64-bit</button>
+          
+        </div>
+      </div>
+      <div class="box2 boxes">
+        <div class="box_names">hindi</div>
+        <div class="download_buttons">
+          <button class="d32_bit"> download 32-bit</button>
+          <button class="d64_bit"> download 64-bit</button>
+          
+        </div>
+      </div>
+      <div class="box3 boxes">
+        <div class="box_names">maths</div>
+        <div class="download_buttons">
+          <button class="d32_bit"> download 32-bit</button>
+          <button class="d64_bit"> download 64-bit</button>
+          
+        </div>
+      </div>
+      <div class="box4 boxes">
+        <div class="box_names">physics</div>
+        <div class="download_buttons">
+          <button class="d32_bit"> download 32-bit</button>
+          <button class="d64_bit"> download 64-bit</button>
+          
+        </div>
+      </div>
+
+    </main>
+
+    </div>
+  </body>
+</html>

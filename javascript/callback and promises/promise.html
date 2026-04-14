@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>promises</title>
+  </head>
+  <body>
+    hello
+    <script>
+      let prom1 = new Promise((resolve, reject) => {
+        let a = Math.ceil(Math.random() * 5);
+        if (a > 5) {
+          reject("number is not in range");
+        } else {
+          setTimeout(() => {
+            console.log("yes i am done");
+            resolve("success");
+          }, 2000);
+        }
+      });
+
+      prom1.then((a) => {
+        console.log(a);
+      }).catch((err)=>{
+        console.log(err)
+      });
+
+
+      function fun1(){
+        return new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                console.log("task 1 completed");
+                resolve("data from task 1");
+            },4000)
+            
+        })
+      }
+      function fun2(){
+        return new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                console.log("task 2 completed");
+                resolve("data from task 2");
+            },4000)
+            
+        })
+      }
+      function fun3(){
+        return new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                console.log("task 3 completed");
+                resolve("data from task 3");
+            },4000)
+            
+        })
+      }
+      
+      console.log("fetching data");
+
+      //promise chaining
+
+      fun1()     
+      .then(()=>fun2())
+      .then(()=>fun3())
+      .then(()=>{
+        console.log("all three tasks are done in sequence")
+      })
+
+
+      Promise.all([fun1(),fun2(),fun3()])
+      .then((result)=>{
+        console.log(result);
+        console.log("all 3 functions are completed")
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>variables</title>
+  </head>
+  <body>
+    <div>Hello I am Tanish Yadav</div>
+    <script>
+      console.log("code is running");
+      console.log("code is running2");
+      //var is globaly scoped and const, let are blocked scope
+      // const value is never updated
+      // const a=6;
+      // a=a+1;(not allowed)
+      //use let intead of var
+      let a=5;
+      {
+        let a=11;
+        console.log(a); //output = 11
+        console.log(a+1); // output = 12
+
+      }
+      console.log(a); //output = 5
+      var b=10;
+      {
+        var b=20;
+        console.log(b); //output = 20 
+
+      }
+      console.log(b); //output = 20
+      let o={
+        name:"Tanish",
+        "roll no":"125113045",
+      }
+      o.branch = "microelectronics and VLSI engineering"
+      console.log(o);
+    </script>
+  </body>
+</html>

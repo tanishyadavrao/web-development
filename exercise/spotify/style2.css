@@ -1,0 +1,89 @@
+@media screen and (max-width: 1100px) {
+  .library {
+    position: absolute;
+    left: -100%;
+    z-index: 1;
+  }
+  header{
+    width: 100%;
+  }
+  .maincontent {
+    width: 1000px;
+    background-color: rgb(32, 32, 32);
+  }
+  .logo {
+    background-color: white;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 25px;
+  }
+
+  .headcont {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-start;
+  }
+  .lftitem {
+    display: flex;
+    flex-direction: row;
+  }
+  .advertisebtn {
+    display: none;
+  }
+  .inputtxt {
+    display: none;
+  }
+  .browsebtn {
+    display: none;
+  }
+  .lth {
+    display: none;
+  }
+  .songimage img{
+height: 150px;
+border-radius: 10px;
+
+}
+.songname{
+  margin: 5px 5px;
+}
+.searchbar{
+    width:50px;
+}
+.hambrgrbtn{
+    display: block;
+    height: 40px;
+    margin: 5px 5px;
+}
+.homebtn{
+    display: none;
+}
+.playbtn{
+  position:absolute;
+  top:120px;
+  left:110px;
+  display: block;
+  cursor: pointer;
+}
+.playbtn img{
+  height:20px;
+}
+.songs{
+    width: 150px;
+}
+
+.songlist1 ul {
+  display: flex;
+  flex-wrap: wrap; 
+}
+.songlist1 ul{
+  display: flex;
+  gap: 5px;
+  list-style: none;
+}
+.playbar{
+    width: 100%;
+}
+
+}
