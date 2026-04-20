@@ -1,0 +1,7 @@
+const express=require('express');
+const router = express.Router();
+
+router.get('/about', (req, res) => {
+  res.send('Hello this is router file')
+})
+module.exports=router;
