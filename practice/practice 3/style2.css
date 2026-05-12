@@ -1,0 +1,49 @@
+
+.registerbox {
+  height: 320px;
+  width: 570px;
+  border: 1px solid rgb(40, 195, 205);
+  background-color: transparent;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgb(40, 195, 205);
+  display: none;
+}
+.act{
+  display: none;
+}
+.registerbox .left {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  padding: 0 40px;
+  right: 0;
+  position: absolute;
+  top: 10%;
+  display: none;
+}
+.registerbox .right {
+  height: 100%;
+  width: 28%;
+  color: white;
+  margin-left: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+
+  position: absolute;
+  left: 0;
+  display: none;
+}
+.registerbox .right .txt1 {
+  font-size: 30px;
+  text-align: left;
+}
+.registerbox .right .lorem {
+  text-align: left;
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(55, 75, 102, 0.459);
+      }
+      .box {
+        background-color: rgb(55, 75, 102);
+        height: 500px;
+        width: 350px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .getcityname {
+        margin-top: 30px;
+      }
+      .inpcityname {
+        height: 30px;
+        width: 150px;
+        border: none;
+        padding-left: 20px;
+      }
+      .srchbtn {
+        height: 30px;
+        border: none;
+        width: 80px;
+      }
+      .dsplycty {
+        margin-top: 20px;
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+      }
+      .temp {
+        margin-top: 20px;
+        color: white;
+        font-size: 35px;
+        font-weight: 700;
+      }
+      .suntime1,.parameters,.parameters2 {
+        display: flex;
+        gap: 90px;
+      }
+      .suntime3 {
+        display: flex;
+        gap: 130px;
+      }
+      .suntime2,
+      .suntime4,
+      .parameters2 {
+        margin-top: 10px;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="getcityname">
+          <input
+            type="text"
+            class="inpcityname"
+            placeholder="Enter City Name"
+          />
+          <button onclick="getData()" class="srchbtn">Search</button>
+        </div>
+        <div class="dsplycty">Select a City</div>
+        <div>
+          <div class="temp"></div>
+        </div>
+        <div class="line1">
+          <div class="suntime1">
+            <div class="sunrise1 suntime2">Sunrise</div>
+            <div class="sunset1 suntime2">sunset</div>
+          </div>
+        </div>
+        <div class="line2">
+          <div class="suntime3">
+            <div class="sunrise2 suntime4"></div>
+            <div class="sunset2 suntime4"></div>
+          </div>
+        </div>
+        <div class="parameters">
+          <div class="humidity1 suntime2">humidity</div>
+          <div class="pressure1 suntime2">Pressure</div>
+        </div>
+
+        <div class="parameters2">
+          <div class="humidity2 suntime4">20%</div>
+          <div class="pressure2 suntime4">20%</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
